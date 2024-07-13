@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
+//program to print the ragne of prime numbers
 public class PrimeRange {
-
+    // function for check num is prime or not
     public static boolean IsPrime(int num) {
         if (num == 2) {
             return true;
@@ -14,10 +15,12 @@ public class PrimeRange {
         }
         return true;
     }
+    // function for print the prime numbers
 
     public static void PrintRange(int num) {
+
         for (int i = 2; i <= num; i++) {
-            if (IsPrime(i)) {
+            if (IsPrime(i)) { // calling is prime to check number is prime
                 System.out.println(i);
             }
         }
